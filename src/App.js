@@ -78,7 +78,7 @@ changeTextColor = color => {
   //Returns the type of clothing that user chooses
   clothing = clothes => {
     if (clothes === "tshirt") {
-      return <TShirt color={this.state.color} />;
+      return (<TShirt color={this.state.color} />);
     } else if (clothes === "sweater") {
       return <Sweater color={this.state.color} />;
     }
@@ -234,8 +234,8 @@ changeTextColor = color => {
         <div className="CanvasContainer">
         <div className="clothest" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
           <Stage
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             onMouseDown={this.handleStageMouseDown}
           >
             <Layer>{this.clothing(this.state.clothing)}</Layer>
@@ -255,8 +255,8 @@ changeTextColor = color => {
           </div>
           <div className="clothesb" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
           <Stage
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             onMouseDown={this.handleStageMouseDown}
           >
             <Layer>{this.clothing2(this.state.clothing)}</Layer>

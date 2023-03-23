@@ -32,8 +32,9 @@ handleChartClick() {
           <a href="#" onClick={this.handleChartClick}>Size Chart</a>
         </h2>
         {this.state.showChart &&
-          <img src={process.env.PUBLIC_URL + '/img/size-chart.jpeg'} alt="Your Image" style={{ width: '60%' ,height:'60%'}}/>
+          <img src={process.env.PUBLIC_URL + '/img/size-chart.jpeg'} alt="Your Image" style={{ width: '100%' ,height:'100%'}}/>
         }
+        <h4 style={{ marginLeft: '10px' }}><a href="https://forms.gle/5FGGz17R1CS3eKmV7" target="_blank">Click Here</a> to Place your order kindly fill this form</h4>
       </div>
     );
   }

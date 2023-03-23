@@ -36,7 +36,7 @@ handleTextStyleChange = (event) => {
     } else if (this.state.textStyle === "style2") {
       this.props.handleTextStyleChange(
         "style2",
-        "'Noto Sans', sans-serif, cursive",
+        "'Cedarville Cursive', cursive",
         "lighter"
       );
     }
@@ -45,13 +45,8 @@ handleTextStyleChange = (event) => {
 
   //When text is turned on then user will be able to input and select the text color
   render() {
-    let fontLink =
-      this.state.textStyle === "style2"
-        ? "https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@200;500&display=swap"
-        : "";
     let fontFamily = this.state.font;
     let fontWeight = "50";
-
     // Set font based on selected text style
     if (this.state.textStyle === "style1") {
       // fontLink = EnglishFont;
@@ -59,7 +54,7 @@ handleTextStyleChange = (event) => {
       fontWeight = "50";
     } else if (this.state.textStyle === "style2") {
       // fontLink = HindiFont;
-      fontFamily = "'Noto Sans', sans-serif, cursive";
+      fontFamily = "'Cedarville Cursive', cursive";
       fontWeight = "50";
     }
     

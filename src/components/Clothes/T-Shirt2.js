@@ -58,8 +58,8 @@ class Scrubs extends Component {
           image={this.state.image1}
           x={0}
           y={0}
-          width={400}
-          height={400}
+          width={300}
+          height={300}
           ref={node => {
             this.scrubBottom = node;
           }}
@@ -70,8 +70,8 @@ class Scrubs extends Component {
   image={this.state.image2}
   x={0}
   y={0}
-  width={400}
-  height={400}
+  width={300}
+  height={300}
   ref={node => {
     this.scrubTop = node;
   }}
